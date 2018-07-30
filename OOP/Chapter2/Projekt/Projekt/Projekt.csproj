@@ -56,6 +56,16 @@
     <Compile Include="Zad2\Sklep.cs" />
     <Compile Include="Zad2\Truskawki.cs" />
     <Compile Include="Zad2\Winogrona.cs" />
+    <Compile Include="Zad3\Agrest.cs" />
+    <Compile Include="Zad3\Banany.cs" />
+    <Compile Include="Zad3\Cennik.cs" />
+    <Compile Include="Zad3\Kasa.cs" />
+    <Compile Include="Zad3\Koszyk.cs" />
+    <Compile Include="Zad3\Mandarynki.cs" />
+    <Compile Include="Zad3\Produkt.cs" />
+    <Compile Include="Zad3\Sklep.cs" />
+    <Compile Include="Zad3\Truskawki.cs" />
+    <Compile Include="Zad3\Winogrona.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
