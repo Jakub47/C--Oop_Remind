@@ -1,0 +1,6 @@
+C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter2\Projekt\Projekt\bin\Debug\Projekt.exe.config
+C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter2\Projekt\Projekt\bin\Debug\Projekt.exe
+C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter2\Projekt\Projekt\bin\Debug\Projekt.pdb
+C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter2\Projekt\Projekt\obj\Debug\Projekt.exe
+C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter2\Projekt\Projekt\obj\Debug\Projekt.pdb
+C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter2\Projekt\Projekt\obj\Debug\Projekt.csprojResolveAssemblyReference.cache
