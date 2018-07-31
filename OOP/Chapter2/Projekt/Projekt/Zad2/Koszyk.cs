@@ -3,26 +3,15 @@ using System.Collections.Generic;
 
 namespace Projekt.Zad2
 {
-    public class Koszyk
+    public class Koszyk : Items
     {
-        public List<Produkt> Produkty { get; set; }
+        //public List<Produkt> Produkty { get; set; }
 
-        public Koszyk()
+        public Koszyk() : base()
         {
-            Produkty = new List<Produkt>();
+            
         }
 
-        public void add(Produkt produkt)
-        {
-            Produkty.Add(produkt);
-        }
 
-        public void ShowContent()
-        {
-            foreach (var item in Produkty)
-            {
-                Console.WriteLine(item.ToString() +  " " + item.Ilosc + " kg" );
-            }
-        }
     }
 }
