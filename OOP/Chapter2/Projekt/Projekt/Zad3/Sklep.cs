@@ -24,10 +24,10 @@ namespace Projekt.Zad3
     public class Sklep
     {
         private Kasa kasa;
-
+        private Cennik cennik;
         public Sklep()
         {
-            Cennik cennik = new Cennik();
+            cennik = new Cennik();
             cennik.Set("Truskawki",5);
             cennik.Set("Truskawki",6);
             cennik.Set("Truskawki",7);
@@ -45,7 +45,7 @@ namespace Projekt.Zad3
             koszyk.Add(new Mandarynki(2));
 
             koszyk.ShowContent();
-            kasa.PrintBill(koszyk);
+            kasa.PrintBill(koszyk,cennik);
 
             //Torba torba = new Torba();
             //torba.LoadFrom(koszyk);
@@ -56,7 +56,7 @@ namespace Projekt.Zad3
 
     public class Test
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             Sklep s = new Sklep();
             s.zakupyDemo("Janek");

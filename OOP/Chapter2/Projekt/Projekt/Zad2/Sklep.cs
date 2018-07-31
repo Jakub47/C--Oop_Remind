@@ -10,11 +10,11 @@ namespace Projekt.Zad2
     {
         public static void Main(string[] args)
         {
-            Cennik cennik = new Cennik();
-            cennik.Set("Truskawki", 5);
-            cennik.Set("Banany", 6);
-            cennik.Set("Agrest", 7);
-            cennik.Set("Winogrona", 7);
+            
+            Cennik.Instance.Set("Truskawki", 5);
+            Cennik.Instance.Set("Banany", 6);
+            Cennik.Instance.Set("Agrest", 7);
+            Cennik.Instance.Set("Winogrona", 7);
 
             Koszyk koszyk = new Koszyk();
 
@@ -26,7 +26,7 @@ namespace Projekt.Zad2
 
             Kasa kasa = new Kasa(1);
             koszyk.ShowContent();
-            kasa.printBill(koszyk, cennik);
+            kasa.PrintBill(koszyk);
 
 
             Console.ReadKey();

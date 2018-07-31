@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Projekt.Zad3
+namespace Projekt.Zad2
 {
     abstract public class Produkt
     {

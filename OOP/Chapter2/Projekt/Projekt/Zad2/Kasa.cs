@@ -11,18 +11,18 @@ namespace Projekt.Zad2
             this.Numer = numer;
         }
 
-        public void printBill(Koszyk k , Cennik c)
+        public void PrintBill(Koszyk k)
         {
             //string wynik = "";
             ////string wynik = k.Produkty.Whe(i => i.ToString() == c.ProduktyCeny[i.ToString()])
             foreach (var item in k.Produkty)
             {
                 float cena = -1;
-                for (int i = 0; i < c.ProduktyCeny.Count; i++)
+                for (int i = 0; i < Cennik.Instance.ProduktyCeny.Count; i++)
                 {
-                    if(c.ProduktyCeny[item.ToString()] != null )
+                    if(Cennik.Instance.ProduktyCeny[item.ToString()] != null )
                     {
-                        cena = Convert.ToInt64(c.ProduktyCeny[item.ToString()]);
+                        cena = Convert.ToInt64(Cennik.Instance.ProduktyCeny[item.ToString()]);
                     }
                 }
 

@@ -4,3 +4,10 @@ C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter2\Projekt\Projekt\bin\Deb
 C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter2\Projekt\Projekt\obj\Debug\Projekt.exe
 C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter2\Projekt\Projekt\obj\Debug\Projekt.pdb
 C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter2\Projekt\Projekt\obj\Debug\Projekt.csprojResolveAssemblyReference.cache
+C:\Users\Ragnus\Desktop\PProject\C--Oop_Remind\OOP\Chapter2\Projekt\Projekt\obj\Debug\Projekt.csprojAssemblyReference.cache
+C:\Users\Ragnus\Desktop\PProject\C--Oop_Remind\OOP\Chapter2\Projekt\Projekt\obj\Debug\Projekt.csproj.CoreCompileInputs.cache
+C:\Users\Ragnus\Desktop\PProject\C--Oop_Remind\OOP\Chapter2\Projekt\Projekt\obj\Debug\Projekt.exe
+C:\Users\Ragnus\Desktop\PProject\C--Oop_Remind\OOP\Chapter2\Projekt\Projekt\obj\Debug\Projekt.pdb
+C:\Users\Ragnus\Desktop\PProject\C--Oop_Remind\OOP\Chapter2\Projekt\Projekt\bin\Debug\Projekt.exe.config
+C:\Users\Ragnus\Desktop\PProject\C--Oop_Remind\OOP\Chapter2\Projekt\Projekt\bin\Debug\Projekt.exe
+C:\Users\Ragnus\Desktop\PProject\C--Oop_Remind\OOP\Chapter2\Projekt\Projekt\bin\Debug\Projekt.pdb
