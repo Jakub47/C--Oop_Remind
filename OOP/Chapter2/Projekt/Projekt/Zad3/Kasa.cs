@@ -4,11 +4,18 @@ namespace Projekt.Zad3
 {
     internal class Kasa
     {
-        public int Numer { get; set; }
+        public static int Numer { get; set; }
+        public int NumerKasy { get; set; }
 
-        public Kasa(int numer)
+        static Kasa()
         {
-            this.Numer = numer;
+            Numer = 0;
+        }
+
+        public Kasa()
+        {
+            Numer++;
+            this.NumerKasy = Numer;
         }
 
         public void PrintBill(Koszyk k)

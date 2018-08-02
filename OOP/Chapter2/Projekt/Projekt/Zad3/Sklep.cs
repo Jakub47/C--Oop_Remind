@@ -8,24 +8,26 @@ namespace Projekt.Zad3
 {
     class Sklep
     {
-        public static void main(string[] args)
+        private Kasa _kasa;
+
+        public Sklep()
         {
             Cennik cennik = Cennik.Instance;
-            
-            //      OLD Method caliing instance directly from class
-            //Cennik.Instance.Set("Truskawki", 5);
-            //Cennik.Instance.Set("Banany", 6);
-            //Cennik.Instance.Set("Agrest", 7);
-            //Cennik.Instance.Set("Winogrona", 7);
 
             //      Create new variable that will store that Instance
             cennik.Set("Truskawki", 5);
             cennik.Set("Banany", 6);
             cennik.Set("Agrest", 7);
             cennik.Set("Winogrona", 7);
+            _kasa = new Kasa();
+        }
 
+        public void ZakupyDemo(String osoba)
+        {
 
             Koszyk koszyk = new Koszyk();
+            Console.WriteLine(osoba + " bierze " + koszyk);
+
 
             koszyk.add(new Truskawki(1));
             koszyk.add(new Banany(0.5f));
@@ -33,9 +35,8 @@ namespace Projekt.Zad3
             koszyk.add(new Mandarynki(2));
             koszyk.add(new Winogrona(0.5f));
 
-            Kasa kasa = new Kasa(1);
             koszyk.ShowContent();
-            kasa.PrintBill(koszyk);
+            _kasa.PrintBill(koszyk);
 
             var torba = new Torba();
             torba.LoadFrom(koszyk);
@@ -44,6 +45,15 @@ namespace Projekt.Zad3
             torba.ShowContent();
 
             Console.ReadKey();
+        }
+    }
+
+    public class Test
+    {
+        public static void Main(string[] args)
+        {
+            var s = new Sklep();
+            s.ZakupyDemo("Janek");
         }
     }
 }

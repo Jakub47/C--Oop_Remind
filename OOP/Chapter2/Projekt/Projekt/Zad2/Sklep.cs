@@ -8,7 +8,7 @@ namespace Projekt.Zad2
 {
     class Sklep
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             Cennik cennik = Cennik.Instance;
             

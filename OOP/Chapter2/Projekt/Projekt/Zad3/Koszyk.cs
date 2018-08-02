@@ -5,11 +5,17 @@ namespace Projekt.Zad3
 {
     public class Koszyk : Items
     {
-        //public List<Produkt> Produkty { get; set; }
+        public static int Numer { get; set; }
+        public int NumerKoszyk { get; set; }
+
+        static Koszyk()
+        {
+            Numer = 0;
+        }
 
         public Koszyk() : base()
         {
-            
+            this.NumerKoszyk = Numer;
         }
 
         internal void add(Produkt produkt)
