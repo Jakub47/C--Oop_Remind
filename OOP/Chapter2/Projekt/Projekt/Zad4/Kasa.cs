@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Projekt.Zad3
+namespace Projekt.Zad4
 {
     internal class Kasa
     {
@@ -11,18 +11,23 @@ namespace Projekt.Zad3
             this.Numer = numer;
         }
 
-        public void PrintBill(Koszyk k)
+        public Kasa()
+        {
+
+        }
+
+        public void PrintBill(Koszyk k , Cennik c)
         {
             //string wynik = "";
             ////string wynik = k.Produkty.Whe(i => i.ToString() == c.ProduktyCeny[i.ToString()])
             foreach (var item in k.Produkty)
             {
                 float cena = -1;
-                for (int i = 0; i < Cennik.Instance.ProduktyCeny.Count; i++)
+                for (int i = 0; i < c.ProduktyCeny.Count; i++)
                 {
-                    if(Cennik.Instance.ProduktyCeny[item.ToString()] != null )
+                    if(c.ProduktyCeny[item.ToString()] != null )
                     {
-                        cena = Convert.ToInt64(Cennik.Instance.ProduktyCeny[item.ToString()]);
+                        cena = Convert.ToInt64(c.ProduktyCeny[item.ToString()]);
                     }
                 }
 

@@ -46,6 +46,18 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="S.cs" />
+    <Compile Include="Zad3\Agrest.cs" />
+    <Compile Include="Zad3\Banany.cs" />
+    <Compile Include="Zad3\Cennik.cs" />
+    <Compile Include="Zad3\Items.cs" />
+    <Compile Include="Zad3\Kasa.cs" />
+    <Compile Include="Zad3\Koszyk.cs" />
+    <Compile Include="Zad3\Mandarynki.cs" />
+    <Compile Include="Zad3\Produkt.cs" />
+    <Compile Include="Zad3\Sklep.cs" />
+    <Compile Include="Zad3\Torba.cs" />
+    <Compile Include="Zad3\Truskawki.cs" />
+    <Compile Include="Zad3\Winogrona.cs" />
     <Compile Include="Zad2\Agrest.cs" />
     <Compile Include="Zad2\Banany.cs" />
     <Compile Include="Zad2\Cennik.cs" />
@@ -58,16 +70,16 @@
     <Compile Include="Zad2\Torba.cs" />
     <Compile Include="Zad2\Truskawki.cs" />
     <Compile Include="Zad2\Winogrona.cs" />
-    <Compile Include="Zad3\Agrest.cs" />
-    <Compile Include="Zad3\Banany.cs" />
-    <Compile Include="Zad3\Cennik.cs" />
-    <Compile Include="Zad3\Kasa.cs" />
-    <Compile Include="Zad3\Koszyk.cs" />
-    <Compile Include="Zad3\Mandarynki.cs" />
-    <Compile Include="Zad3\Produkt.cs" />
-    <Compile Include="Zad3\Sklep.cs" />
-    <Compile Include="Zad3\Truskawki.cs" />
-    <Compile Include="Zad3\Winogrona.cs" />
+    <Compile Include="Zad4\Agrest.cs" />
+    <Compile Include="Zad4\Banany.cs" />
+    <Compile Include="Zad4\Cennik.cs" />
+    <Compile Include="Zad4\Kasa.cs" />
+    <Compile Include="Zad4\Koszyk.cs" />
+    <Compile Include="Zad4\Mandarynki.cs" />
+    <Compile Include="Zad4\Produkt.cs" />
+    <Compile Include="Zad4\Sklep.cs" />
+    <Compile Include="Zad4\Truskawki.cs" />
+    <Compile Include="Zad4\Winogrona.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
