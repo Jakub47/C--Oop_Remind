@@ -34,6 +34,7 @@ namespace Projekt.Zad2
         }
 
         public void Set(string v1, float v2)
+
         {
             ProduktyCeny.Add(v1, v2);
         }

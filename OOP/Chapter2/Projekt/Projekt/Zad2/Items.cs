@@ -13,16 +13,11 @@ namespace Projekt.Zad2
     /// </summary>
     abstract public  class Items
     {
-        internal List<Produkt> Produkty { get; set; }
+        internal List<Produkt> Produkty { get; set; } = new List<Produkt>();
 
         public Items()
         {
             Produkty = new List<Produkt>();
-        }
-
-        internal void add(Produkt produkt)
-        {
-            Produkty.Add(produkt);
         }
 
         internal void ShowContent()

@@ -12,6 +12,9 @@ namespace Projekt.Zad2
             
         }
 
-
+        internal void add(Produkt produkt)
+        {
+            Produkty.Add(produkt);
+        }
     }
 }

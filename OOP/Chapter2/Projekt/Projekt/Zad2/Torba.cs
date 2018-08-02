@@ -12,5 +12,10 @@ namespace Projekt.Zad2
         {
 
         }
+
+        public void LoadFrom(Koszyk k)
+        {
+            k.Produkty.ForEach(i => this.Produkty.Add(i)); 
+        }
     }
 }

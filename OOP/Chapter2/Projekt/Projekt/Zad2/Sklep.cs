@@ -10,11 +10,20 @@ namespace Projekt.Zad2
     {
         public static void Main(string[] args)
         {
+            Cennik cennik = Cennik.Instance;
             
-            Cennik.Instance.Set("Truskawki", 5);
-            Cennik.Instance.Set("Banany", 6);
-            Cennik.Instance.Set("Agrest", 7);
-            Cennik.Instance.Set("Winogrona", 7);
+            //      OLD Method caliing instance directly from class
+            //Cennik.Instance.Set("Truskawki", 5);
+            //Cennik.Instance.Set("Banany", 6);
+            //Cennik.Instance.Set("Agrest", 7);
+            //Cennik.Instance.Set("Winogrona", 7);
+
+            //      Create new variable that will store that Instance
+            cennik.Set("Truskawki", 5);
+            cennik.Set("Banany", 6);
+            cennik.Set("Agrest", 7);
+            cennik.Set("Winogrona", 7);
+
 
             Koszyk koszyk = new Koszyk();
 
@@ -28,6 +37,11 @@ namespace Projekt.Zad2
             koszyk.ShowContent();
             kasa.PrintBill(koszyk);
 
+            var torba = new Torba();
+            torba.LoadFrom(koszyk);
+
+            Console.WriteLine("Zawartość torby");
+            torba.ShowContent();
 
             Console.ReadKey();
         }
