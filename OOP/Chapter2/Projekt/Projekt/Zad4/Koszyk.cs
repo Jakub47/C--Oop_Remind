@@ -15,6 +15,7 @@ namespace Projekt.Zad4
 
         public Koszyk() : base()
         {
+            Numer++;
             this.NumerKoszyk = Numer;
         }
 

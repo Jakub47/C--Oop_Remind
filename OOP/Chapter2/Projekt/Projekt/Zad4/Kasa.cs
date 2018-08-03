@@ -14,7 +14,7 @@ namespace Projekt.Zad4
 
         public Kasa()
         {
-            Numer++;
+            ++Numer;
             this.NumerKasy = Numer;
         }
 

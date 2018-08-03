@@ -38,7 +38,7 @@ namespace Projekt.Zad4
             Console.WriteLine("Zawartość pojemnika koszyk \" Koszyk sklepowy nr " + Koszyk.Numer + "\"" );
             koszyk.ShowContent();
 
-            Console.WriteLine("Kasa - rachunek za {koszyk sklepowy nr }" + Koszyk.Numer);
+            Console.WriteLine("Kasa - rachunek za {koszyk sklepowy nr " + Koszyk.Numer + " } ");
             _kasa.PrintBill(koszyk);
 
             var torba = new Torba(osoba);
