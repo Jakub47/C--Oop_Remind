@@ -50,7 +50,7 @@ namespace Projekt.Zad3
 
     public class Test
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             var s = new Sklep();
             s.ZakupyDemo("Janek");

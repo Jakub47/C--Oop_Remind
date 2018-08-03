@@ -73,11 +73,13 @@
     <Compile Include="Zad4\Agrest.cs" />
     <Compile Include="Zad4\Banany.cs" />
     <Compile Include="Zad4\Cennik.cs" />
+    <Compile Include="Zad4\Items.cs" />
     <Compile Include="Zad4\Kasa.cs" />
     <Compile Include="Zad4\Koszyk.cs" />
     <Compile Include="Zad4\Mandarynki.cs" />
     <Compile Include="Zad4\Produkt.cs" />
     <Compile Include="Zad4\Sklep.cs" />
+    <Compile Include="Zad4\Torba.cs" />
     <Compile Include="Zad4\Truskawki.cs" />
     <Compile Include="Zad4\Winogrona.cs" />
   </ItemGroup>

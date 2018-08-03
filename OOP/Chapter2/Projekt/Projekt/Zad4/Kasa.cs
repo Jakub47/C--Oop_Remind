@@ -4,30 +4,32 @@ namespace Projekt.Zad4
 {
     internal class Kasa
     {
-        public int Numer { get; set; }
+        public static int Numer { get; set; }
+        public int NumerKasy { get; set; }
 
-        public Kasa(int numer)
+        static Kasa()
         {
-            this.Numer = numer;
+            Numer = 0;
         }
 
         public Kasa()
         {
-
+            Numer++;
+            this.NumerKasy = Numer;
         }
 
-        public void PrintBill(Koszyk k , Cennik c)
+        public void PrintBill(Koszyk k)
         {
             //string wynik = "";
             ////string wynik = k.Produkty.Whe(i => i.ToString() == c.ProduktyCeny[i.ToString()])
             foreach (var item in k.Produkty)
             {
                 float cena = -1;
-                for (int i = 0; i < c.ProduktyCeny.Count; i++)
+                for (int i = 0; i < Cennik.Instance.ProduktyCeny.Count; i++)
                 {
-                    if(c.ProduktyCeny[item.ToString()] != null )
+                    if(Cennik.Instance.ProduktyCeny[item.ToString()] != null )
                     {
-                        cena = Convert.ToInt64(c.ProduktyCeny[item.ToString()]);
+                        cena = Convert.ToInt64(Cennik.Instance.ProduktyCeny[item.ToString()]);
                     }
                 }
 

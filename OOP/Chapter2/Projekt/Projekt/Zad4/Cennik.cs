@@ -7,11 +7,34 @@ using System.Threading.Tasks;
 
 namespace Projekt.Zad4
 {
-    class Cennik
+    //Sealed == zabezpieczenie przed dziediczeniem
+    public sealed class Cennik
     {
+        //public
         public Hashtable ProduktyCeny = new Hashtable();
 
-        internal void Set(string v1, float v2)
+
+        //private
+        private static Cennik m_oInstance = null;
+        private static readonly object m_oPadLock = new object();
+        
+        public static Cennik Instance
+        {
+            get
+            {
+                lock (m_oPadLock)
+                {
+                    if(m_oInstance == null)
+                    {
+                        m_oInstance = new Cennik();
+                    }
+                    return m_oInstance;
+                }
+            }
+        }
+
+        public void Set(string v1, float v2)
+
         {
             ProduktyCeny.Add(v1, v2);
         }

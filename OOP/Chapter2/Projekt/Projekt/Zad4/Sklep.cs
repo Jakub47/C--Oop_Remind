@@ -6,60 +6,62 @@ using System.Threading.Tasks;
 
 namespace Projekt.Zad4
 {
-    /// <summary>
-    /// Napisac aplikacje ktora symuluje zakupy w sklepie.
-    /// Nalezy uzyc abstrakcji i polimorfizmu.
-    /// Nalezy zminimalizowac kod Koszyk i Torba.
-    /// Zdefinowac trak klase cennik aby istnial tylko jeden obiekt tej klasay (singleton). Tylko jeden cennik.
-    /// 
-    /// Z treści wynika,że potrzeba jeszcze 2 klas o których nie wspomniano. Sądzę,że chodzi o klase abstrakcyjną Dla
-    /// -Wszystkich produktów
-    /// -Torba i Koszyk
-    /// 
-    /// The C# equivalent for vector in java, is ArrayList. It is in System.Collection namespace.
-    /// For Key/ Value pair, you can use Hashtables, Dictionary or even a KeyValuePair object.
-    /// 
-    /// 
-    /// </summary>
-    public class Sklep
+    class Sklep
     {
-        private Kasa kasa;
-        private Cennik cennik;
+        private Kasa _kasa;
+
         public Sklep()
         {
-            cennik = new Cennik();
-            cennik.Set("Truskawki",5);
-            cennik.Set("Truskawki",6);
-            cennik.Set("Truskawki",7);
-            kasa = new Kasa();
+            Cennik cennik = Cennik.Instance;
+
+            //      Create new variable that will store that Instance
+            cennik.Set("Truskawki", 5);
+            cennik.Set("Banany", 6);
+            cennik.Set("Agrest", 7);
+            cennik.Set("Winogrona", 7);
+            _kasa = new Kasa();
         }
 
-        public void zakupyDemo(string osoba)
+        internal void Zakupy(string osoba, Produkt[] produkty)
         {
             Koszyk koszyk = new Koszyk();
-            Console.WriteLine(osoba + " bierze " + koszyk);
+            Console.WriteLine(osoba + " bierze koszyk sklepowy nr " + Koszyk.Numer);
 
-            koszyk.Add(new Truskawki(1));
-            koszyk.Add(new Banany(0.5f));
-            koszyk.Add(new Agrest(0.25f));
-            koszyk.Add(new Mandarynki(2));
+            produkty.ToList().ForEach(i => koszyk.add(i));
 
+            //koszyk.add(new Truskawki(1));
+            //koszyk.add(new Banany(0.5f));
+            //koszyk.add(new Agrest(0.25f));
+            //koszyk.add(new Mandarynki(2));
+            //koszyk.add(new Winogrona(0.5f));
+
+            Console.WriteLine("Zawartość pojemnika koszyk \" Koszyk sklepowy nr " + Koszyk.Numer + "\"" );
             koszyk.ShowContent();
-            kasa.PrintBill(koszyk,cennik);
 
-            //Torba torba = new Torba();
-            //torba.LoadFrom(koszyk);
+            Console.WriteLine("Kasa - rachunek za {koszyk sklepowy nr }" + Koszyk.Numer);
+            _kasa.PrintBill(koszyk);
 
-            //torba.ShowContent();
+            var torba = new Torba(osoba);
+            torba.LoadFrom(koszyk);
+
+            Console.WriteLine("Zawartość pojemnika \"torba [Wlasciciel: " + torba.Osoba + " ] : ");
+            torba.ShowContent();
+
+            Console.ReadKey();
+            Console.WriteLine("---------------------------------------------------------");
         }
     }
 
     public class Test
     {
-        public static void main(string[] args)
+        public static void Main(string[] args)
         {
-            Sklep s = new Sklep();
-            s.zakupyDemo("Janek");
+            var s = new Sklep();
+            s.Zakupy("Janek",
+                new Produkt[] { new Truskawki(2), new Banany(0.5f), new Agrest(0.25f), new Mandarynki(1)});
+
+            s.Zakupy("Małgosia",
+                new Produkt[] { new Truskawki(5), new Banany(3) });
         }
     }
 }
