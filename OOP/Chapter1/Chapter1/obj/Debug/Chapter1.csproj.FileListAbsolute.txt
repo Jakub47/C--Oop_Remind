@@ -1,6 +1,0 @@
-C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter1\Chapter1\bin\Debug\Chapter1.exe.config
-C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter1\Chapter1\bin\Debug\Chapter1.exe
-C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter1\Chapter1\bin\Debug\Chapter1.pdb
-C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter1\Chapter1\obj\Debug\Chapter1.csprojResolveAssemblyReference.cache
-C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter1\Chapter1\obj\Debug\Chapter1.exe
-C:\Users\Ragnus\Desktop\PProject\ConsoleApp\OOP\Chapter1\Chapter1\obj\Debug\Chapter1.pdb
