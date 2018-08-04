@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interfaces
+namespace Interfaces.Teoria
 {
-    class Program
+    interface IMoveable
     {
-        static void nain(string[] args)
-        {
-
-        }
+        void Start();
+        void Stop();
     }
 }

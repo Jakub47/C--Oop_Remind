@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interfaces
+namespace Interfaces.Teoria
 {
-    class Program
+    public static class MyContansts
     {
-        static void nain(string[] args)
-        {
-
-        }
+        public const int Quiet = 0;
+        public const int Loud = 1;
     }
 }
