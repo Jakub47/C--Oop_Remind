@@ -44,17 +44,26 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Teoria\Car.cs" />
-    <Compile Include="Teoria\IMoveable.cs" />
-    <Compile Include="Teoria\ISpeakable.cs" />
-    <Compile Include="Teoria\MyContansts.cs" />
-    <Compile Include="Teoria\Pies.cs" />
-    <Compile Include="Teoria\Vehicle.cs" />
-    <Compile Include="Teoria\Wodospad.cs" />
-    <Compile Include="Teoria\Zwierz.cs" />
+    <Compile Include="Teoria\Adaptery\Forum\IMessenger.cs" />
+    <Compile Include="Teoria\Adaptery\Forum\MessageManager.cs" />
+    <Compile Include="Teoria\Adaptery\Forum\Messenger.cs" />
+    <Compile Include="Teoria\Adaptery\Ksiazka\A.cs" />
+    <Compile Include="Teoria\Adaptery\Ksiazka\B.cs" />
+    <Compile Include="Teoria\Adaptery\Ksiazka\C.cs" />
+    <Compile Include="Teoria\Adaptery\Ksiazka\IRozbudowanyInterfejs.cs" />
+    <Compile Include="Teoria\Adaptery\Ksiazka\NaszAdapter.cs" />
+    <Compile Include="Teoria\Interfejsy\Car.cs" />
+    <Compile Include="Teoria\Interfejsy\IMoveable.cs" />
+    <Compile Include="Teoria\Interfejsy\ISpeakable.cs" />
+    <Compile Include="Teoria\Interfejsy\MyContansts.cs" />
+    <Compile Include="Teoria\Interfejsy\Pies.cs" />
+    <Compile Include="Teoria\Interfejsy\Vehicle.cs" />
+    <Compile Include="Teoria\Interfejsy\Wodospad.cs" />
+    <Compile Include="Teoria\Interfejsy\Zwierz.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
