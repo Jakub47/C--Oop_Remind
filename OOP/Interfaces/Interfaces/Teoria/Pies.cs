@@ -19,17 +19,18 @@ namespace Interfaces.Teoria
 
         public string GetVoice(int voice)
         {
-            throw new NotImplementedException();
+            if (voice == MyContansts.Loud) return "HAU...HAU...HAU..";
+            else return "hau... hau...";
         }
 
         public void Start()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Pies " + name + " biegnie");
         }
 
         public void Stop()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Pies " + name + " stanął");
         }
     }
 }

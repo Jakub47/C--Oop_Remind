@@ -6,16 +6,11 @@ using System.Threading.Tasks;
 
 namespace Interfaces.Teoria
 {
-    public class Zwierz
+    class Car : Vehicle
     {
-        public string  name { get; set; }
-        public Zwierz()
+        public Car(int numer) : base(numer)
         {
 
-        }
-        public Zwierz(string imie)
-        {
-            this.name = imie;
         }
     }
 }
