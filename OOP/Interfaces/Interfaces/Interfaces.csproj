@@ -64,6 +64,8 @@
     <Compile Include="Teoria\Konwersje zwezajace\Zwierz.cs" />
     <Compile Include="Teoria\Konwersje zwezajace\Start.cs" />
     <Compile Include="Teoria\Konwersje zwezajace\Kot.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\Start.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\A.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -71,6 +73,7 @@
   <ItemGroup />
   <ItemGroup>
     <Folder Include="Teoria\Konwersje zwezajace\" />
+    <Folder Include="Teoria\KlasyWewnerzne\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

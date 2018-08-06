@@ -14,7 +14,7 @@ namespace Interfaces.Teoria.Konwersjezwezajace
 		/// z tego Zwierza z powrotem Psa
         /// </summary>
         /// <param name="args">The command-line arguments.</param>
-		static void Main(string[] args)
+		static void main(string[] args)
         {
 			var pies = new Pies();
 			Zwierz z = new Zwierz();
