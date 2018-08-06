@@ -12,7 +12,7 @@ namespace Interfaces
 {
     class Program
     {
-        static void Main(string[] args)
+        static void main(string[] args)
         {
             //var kuba = new Pies("Kuba");
             //kuba.Start();
@@ -34,5 +34,6 @@ namespace Interfaces
                     Console.WriteLine(""+objects[i]);
             }
         }
+   
     }
 }
