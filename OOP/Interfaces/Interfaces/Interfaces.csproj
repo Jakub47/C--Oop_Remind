@@ -69,6 +69,7 @@
     <Compile Include="Teoria\KlasyWewnerzne\Car.cs" />
     <Compile Include="Teoria\KlasyWewnerzne\Vehicle.cs" />
     <Compile Include="Teoria\KlasyWewnerzne\IMoveable.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\MyConst.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

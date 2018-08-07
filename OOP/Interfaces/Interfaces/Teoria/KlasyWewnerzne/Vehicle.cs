@@ -15,7 +15,17 @@ namespace Interfaces.Teoria.KlasyWewnerzne
 			this.Owner = ownwer; this.w = w; this.h = h;
 			this.l = l; this.weight = weight; this.state = state;
         }
-    }
+
+		public void Stop()
+		{
+			throw new NotImplementedException();
+		}
+
+		public void Start()
+		{
+			throw new NotImplementedException();
+		}
+	}
 
 	public class Person
 	{
