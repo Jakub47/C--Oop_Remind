@@ -66,6 +66,9 @@
     <Compile Include="Teoria\Konwersje zwezajace\Kot.cs" />
     <Compile Include="Teoria\KlasyWewnerzne\Start.cs" />
     <Compile Include="Teoria\KlasyWewnerzne\A.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\Car.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\Vehicle.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\IMoveable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
