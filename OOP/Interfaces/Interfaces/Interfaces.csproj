@@ -52,6 +52,7 @@
     <Compile Include="Teoria\Adaptery\Ksiazka\C.cs" />
     <Compile Include="Teoria\Adaptery\Ksiazka\IRozbudowanyInterfejs.cs" />
     <Compile Include="Teoria\Adaptery\Ksiazka\NaszAdapter.cs" />
+    <Compile Include="Teoria\Delegaty_Animowane\Delegat.cs" />
     <Compile Include="Teoria\Interfejsy\Car.cs" />
     <Compile Include="Teoria\Interfejsy\IMoveable.cs" />
     <Compile Include="Teoria\Interfejsy\ISpeakable.cs" />

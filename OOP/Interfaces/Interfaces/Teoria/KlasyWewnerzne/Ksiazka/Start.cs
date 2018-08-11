@@ -7,10 +7,11 @@ namespace Interfaces.Teoria.KlasyWewnerzne
         {
         }
 
-		static void Main(string[] args)
+		static void main(string[] args)
         {
-            var c = new Car();
-            c.Fu
+            //var c = new Car();
+            var cos = new { Name = "Adam" };
+            Console.WriteLine(cos.Name);
             Console.ReadKey();
         }
     }
