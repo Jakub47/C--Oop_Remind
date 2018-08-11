@@ -60,24 +60,24 @@
     <Compile Include="Teoria\Interfejsy\Vehicle.cs" />
     <Compile Include="Teoria\Interfejsy\Wodospad.cs" />
     <Compile Include="Teoria\Interfejsy\Zwierz.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\Forum\BlobOfBusinessData.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\Forum\BusinessDatum.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\Forum\Factory.cs" />
     <Compile Include="Teoria\Konwersje zwezajace\Pies.cs" />
     <Compile Include="Teoria\Konwersje zwezajace\Zwierz.cs" />
     <Compile Include="Teoria\Konwersje zwezajace\Start.cs" />
     <Compile Include="Teoria\Konwersje zwezajace\Kot.cs" />
-    <Compile Include="Teoria\KlasyWewnerzne\Start.cs" />
-    <Compile Include="Teoria\KlasyWewnerzne\A.cs" />
-    <Compile Include="Teoria\KlasyWewnerzne\Car.cs" />
-    <Compile Include="Teoria\KlasyWewnerzne\Vehicle.cs" />
-    <Compile Include="Teoria\KlasyWewnerzne\IMoveable.cs" />
-    <Compile Include="Teoria\KlasyWewnerzne\MyConst.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\Ksiazka\Start.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\Ksiazka\A.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\Ksiazka\Car.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\Ksiazka\Vehicle.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\Ksiazka\IMoveable.cs" />
+    <Compile Include="Teoria\KlasyWewnerzne\Ksiazka\MyConst.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Folder Include="Teoria\Konwersje zwezajace\" />
-    <Folder Include="Teoria\KlasyWewnerzne\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

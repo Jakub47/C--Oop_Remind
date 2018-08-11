@@ -38,13 +38,41 @@ namespace Interfaces.Teoria.KlasyWewnerzne
 				else
 				{
 					_car.fuelTimer.Interval -= 1;
-					if (_car.fuelTimer.Interval == 0) Stop();
-				}
+					if (_car.fuelTimer.Interval == 0) _car.fuelTimer.Stop();
+				} 
 			}
 		}
 
-        public Car()
+        public Car(Person ownwer, int w,int h,int l,int weight, int state,string nr,int tankCp)
+            : base(ownwer,  w,  h,  l,  weight,  state)
         {
+            this.NrRej = nr;
+            this.TankCapacity = tankCp;
+        }
+
+        public void fill(int amount)
+        {
+            if (this.state == MyConst.MOVING)
+                Console.WriteLine("Nie moge tankowac w ruchu");
+            else
+            {
+                Fuel += amount;
+                if (Fuel > TankCapacity) Fuel = TankCapacity;
+            }
+        }
+
+        public override void Start()
+        {
+           if(Fuel > 0)
+            {
+                base.Start();
+                fuelTimer.Start();
+            }
+        }
+
+        public override void Stop()
+        {
+            base.Stop();
         }
     }
 }

@@ -9,7 +9,8 @@ namespace Interfaces.Teoria.KlasyWewnerzne
 
 		static void Main(string[] args)
         {
-            
+            var c = new Car();
+            c.Fu
             Console.ReadKey();
         }
     }

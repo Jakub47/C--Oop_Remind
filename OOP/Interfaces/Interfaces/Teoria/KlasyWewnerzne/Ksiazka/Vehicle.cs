@@ -16,12 +16,12 @@ namespace Interfaces.Teoria.KlasyWewnerzne
 			this.l = l; this.weight = weight; this.state = state;
         }
 
-		public void Stop()
+		public virtual void Stop()
 		{
 			throw new NotImplementedException();
 		}
 
-		public void Start()
+		public virtual void Start()
 		{
 			throw new NotImplementedException();
 		}
