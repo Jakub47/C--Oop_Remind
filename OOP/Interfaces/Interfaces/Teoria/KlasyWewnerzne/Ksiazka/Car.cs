@@ -68,11 +68,18 @@ namespace Interfaces.Teoria.KlasyWewnerzne
                 base.Start();
                 fuelTimer.Start();
             }
+            else Console.WriteLine("Brak bezyny");
         }
 
         public override void Stop()
         {
             base.Stop();
+            fuelTimer.Stop();
+        }
+
+        public override string ToString()
+        {
+            return "Samochód nr rej " + NrRej + " - " + state;
         }
     }
 }
