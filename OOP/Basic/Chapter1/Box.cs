@@ -12,7 +12,7 @@ namespace Chapter1
         public float szerokosc { get; set; }
         public float wysokosc { get; set; }
 
-        //statics
+        //staticsss
         private static float szerokoscLaczna = 0;
         private static float wysokoscLaczna = 0;
 

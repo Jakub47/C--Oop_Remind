@@ -75,11 +75,20 @@
     <Compile Include="Teoria\KlasyWewnerzne\Ksiazka\Vehicle.cs" />
     <Compile Include="Teoria\KlasyWewnerzne\Ksiazka\IMoveable.cs" />
     <Compile Include="Teoria\KlasyWewnerzne\Ksiazka\MyConst.cs" />
+    <Compile Include="Zadania\Zad2\Class1.cs" />
+    <Compile Include="Zadania\Zad2\IMoveable.cs" />
+    <Compile Include="Zadania\Zad2\ISinging.cs" />
+    <Compile Include="Zadania\Zad2\Program.cs" />
+    <Compile Include="Zadania\Zad2\Zad2.cs" />
+    <Compile Include="Zadania\Zad2\Zad3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Zadania\Zad3\" />
+    <Folder Include="Zadania\Zad4\" />
+  </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
