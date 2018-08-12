@@ -81,13 +81,15 @@
     <Compile Include="Zadania\Zad2\Program.cs" />
     <Compile Include="Zadania\Zad2\Zad2.cs" />
     <Compile Include="Zadania\Zad2\Zad3.cs" />
+    <Compile Include="Zadania\Zad4\Class1.cs" />
+    <Compile Include="Zadania\Zad4\IShowable.cs" />
+    <Compile Include="Zadania\Zad4\Program.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Zadania\Zad3\" />
-    <Folder Include="Zadania\Zad4\" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
