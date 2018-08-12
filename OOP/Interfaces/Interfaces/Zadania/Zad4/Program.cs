@@ -10,12 +10,18 @@ namespace Interfaces.Zadania.Zad4
     {
         static void Main(string[] args)
         {
+            List<IShowable> shows = new List<IShowable>();
+            shows.Add(new Class1());
+            shows.Add(new Class2());
+            //shows.Add(new Class3());
 
+            ShowAll(shows);
+            Console.ReadKey();
         }
 
-        private static void ShowAll(IShowable[] show)
+        private static void ShowAll(List<IShowable> show)
         {
-
+            show.ForEach(i => i.Show());
         }
     }
 }

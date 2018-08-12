@@ -13,7 +13,7 @@ namespace Interfaces.Teoria.Delegaty_Animowane
 
     class Program : Delegaty
     { 
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             Delegat1 dodawanie1 = delegate (int arg1, int arg2)
             {

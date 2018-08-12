@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces.Zadania.Zad4
 {
-    class Class1 : IShowable
+    class Class3
     {
-        public void Show()
-        {
-            Console.WriteLine("to jest metoda Class1");
-        }
     }
 }

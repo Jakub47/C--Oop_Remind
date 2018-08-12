@@ -82,6 +82,8 @@
     <Compile Include="Zadania\Zad2\Zad2.cs" />
     <Compile Include="Zadania\Zad2\Zad3.cs" />
     <Compile Include="Zadania\Zad4\Class1.cs" />
+    <Compile Include="Zadania\Zad4\Class2.cs" />
+    <Compile Include="Zadania\Zad4\Class3.cs" />
     <Compile Include="Zadania\Zad4\IShowable.cs" />
     <Compile Include="Zadania\Zad4\Program.cs" />
   </ItemGroup>
